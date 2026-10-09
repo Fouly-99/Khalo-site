@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0d12">
+<title>Anas Elfouly | Digital Card</title>
+<style>
+:root{--bg:#080b10;--panel:#111720;--line:#273241;--muted:#98a7b8;--text:#f3f6fb;--accent:#8df5c4}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#15332d 0,transparent 32%),var(--bg);color:var(--text);font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh;display:grid;place-items:center;padding:24px}
+.wrap{width:min(100%,520px)}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;color:var(--muted);font-size:12px;letter-spacing:.16em;text-transform:uppercase}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:8px;box-shadow:0 0 12px #8df5c477}
+.card{border:1px solid var(--line);background:linear-gradient(145deg,#151e29f5,#0d121af7);border-radius:28px;overflow:hidden;box-shadow:0 24px 80px #0008}
+.hero{padding:30px 28px 24px;background:linear-gradient(135deg,#1a2b30,#111720 60%);border-bottom:1px solid var(--line);position:relative}.hero:after{content:"AE";position:absolute;right:20px;top:12px;font-size:90px;font-weight:900;letter-spacing:-.1em;color:#ffffff08}
+.avatar{width:76px;height:76px;border-radius:22px;display:grid;place-items:center;background:linear-gradient(135deg,#8df5c4,#6ba7ff);color:#08110f;font-weight:900;font-size:25px;box-shadow:0 8px 30px #8df5c422;margin-bottom:22px}
+.eyebrow{font-size:11px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase}.name{font-size:clamp(30px,8vw,42px);line-height:1.05;letter-spacing:-.05em;margin:7px 0 10px;font-weight:850}.role{color:#c0ccd9;margin:0}.body{padding:25px 28px 28px}.label{color:var(--muted);font-size:11px;letter-spacing:.17em;text-transform:uppercase;margin:0 0 8px}.bio{margin:0 0 24px;color:#d5deea}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px}.tile{border:1px solid var(--line);border-radius:15px;padding:13px;background:#ffffff03}.tile strong{display:block;font-size:14px}.tile span{display:block;color:var(--muted);font-size:12px;margin-top:3px}.links{display:flex;flex-wrap:wrap;gap:9px}.links a{border:1px solid #344352;border-radius:999px;padding:9px 13px;color:var(--text);text-decoration:none;font-size:13px}.links a:hover{border-color:var(--accent);color:var(--accent)}.note{color:#8190a2;font-size:11px;margin:22px 0 0}.foot{display:flex;justify-content:space-between;color:#778698;font-size:11px;margin-top:16px;letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:400px){body{padding:14px}.hero,.body{padding-left:21px;padding-right:21px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top"><span><i class="dot"></i>Digital profile</span><span>AE / 001</span></div>
+  <article class="card">
+    <header class="hero">
+      <div class="avatar">AE</div>
+      <div class="eyebrow">Personal card</div>
+      <h1 class="name">Anas Elfouly</h1>
+      <p class="role">Cybersecurity Student · Aspiring SOC Analyst</p>
+    </header>
+    <section class="body">
+      <p class="label">About</p>
+      <p class="bio">Curious by nature. Focused on cybersecurity, threat intelligence, and building practical security projects. Always learning, always improving.</p>
+      <p class="label">Profile snapshot</p>
+      <div class="grid">
+        <div class="tile"><strong>Cybersecurity</strong><span>Primary interest</span></div>
+        <div class="tile"><strong>Blue Team</strong><span>Focus area</span></div>
+        <div class="tile"><strong>Threat Intel</strong><span>Exploring</span></div>
+        <div class="tile"><strong>Egypt</strong><span>Based in</span></div>
+      </div>
+      <p class="label">Connect</p>
+      <nav class="links" aria-label="Social links">
+        <a href="#" onclick="demo(event)">LinkedIn ↗</a>
+        <a href="#" onclick="demo(event)">GitHub ↗</a>
+        <a href="mailto:anas@example.com">Email ↗</a>
+      </nav>
+      <p class="note">Demo profile — contact details and links are placeholders. Replace them with your real details before sharing publicly.</p>
+    </section>
+  </article>
+  <div class="foot"><span>ANAS ELFOULY</span><span>Too easy, khalo.</span></div>
+</main>
+<script>function demo(e){e.preventDefault();alert("Demo link — replace this with your real profile URL.");}</script>
+</body>
+</html>
